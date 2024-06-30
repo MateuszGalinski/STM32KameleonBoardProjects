@@ -2,7 +2,7 @@
 
 Welcome to the STM32 Kameleon Board Projects repository. This collection showcases various projects developed for the STM32 Kameleon Board. Only main.c and my own libraries are provided so in order to run them you have to generate your own stm ide project and insert them there.
 
-1. **7 LED Display Counter (No HAL)**: A project demonstrating a 7-segment LED display counter without using the Hardware Abstraction Layer (HAL).
+# 1. **7 LED Display Counter (No HAL)**: A project demonstrating a 7-segment LED display counter without using the Hardware Abstraction Layer (HAL).
 
 ## Overview
   This project showcases the use of an STM32 microcontroller to interface with a seven-segment display and a joystick. The main functionality includes displaying a 4-digit number on the seven-segment display and incrementing or decrementing this number based on joystick input. This project involves configuring GPIOs, setting up the system clock, and initializing peripherals.
@@ -24,7 +24,7 @@ Welcome to the STM32 Kameleon Board Projects repository. This collection showcas
       Diodes_Init(): Initializes additional LEDs (optional for debugging or indicators).
       Set_Moder(volatile uint32_t* portModer, uint32_t pins, uint32_t mode): Configures the mode (input/output) of GPIO pins.
 
-2. **Blinking LED with Joystick Control**: A simple LED blinking project controlled via a joystick.
+# 2. **Blinking LED with Joystick Control**: A simple LED blinking project controlled via a joystick.
 ## Overview
   This project demonstrates the use of an STM32 microcontroller to control a series of LEDs, making them blink in a predefined sequence. The LEDs will blink from left to right and then from right to left. The project includes GPIO configuration, system clock setup, and control of LED states using the HAL library.
 
@@ -43,7 +43,7 @@ Welcome to the STM32 Kameleon Board Projects repository. This collection showcas
     Blink_Leds_To_Right(): Blinks the LEDs from right to left.
     Get_Led(int ledNumber): Returns the GPIO pin corresponding to the LED number.
     
-3. **Counter**: A basic counter application.
+# 3. **Counter**: A basic counter application.
 
 ## Code Explanation
 The main components of the code are:
@@ -76,7 +76,7 @@ The main components of the code are:
 - `Diodes_Init()`: Initializes the LEDs.
 - `SystemClock_Config()`: Configures the system clock.
 
-4. **Counter No HAL with Joystick Control**: A counter project controlled by a joystick without using HAL.
+# 4. **Counter No HAL with Joystick Control**: A counter project controlled by a joystick without using HAL.
 
 ## Code Explanation
 The main components of the code are:
@@ -115,7 +115,7 @@ The main components of the code are:
 ### Segment Data
 The `segments` array contains the segment combinations for displaying digits 0-9.
 
-5. **Interrupt-Based UART Receive (No HAL)**: Implementing UART communication using interrupts, without HAL.
+# 5. **Interrupt-Based UART Receive (No HAL)**: Implementing UART communication using interrupts, without HAL.
 
 ## Project Overview
 
@@ -149,7 +149,7 @@ Ensure proper error handling and debugging when the FIFO buffer overflows.
 The program expects valid single-digit numbers; other inputs may cause errors.
 There are polling send functions in handler which should be substituted for interrupt based sending system simillar to receive one
 
-6. **Polling UART (No HAL)**: UART communication using polling method, without HAL.
+# 6. **Polling UART (No HAL)**: UART communication using polling method, without HAL.
 
 ## Project Overview
 
@@ -171,7 +171,7 @@ char Recv_char(void): Receives a single character from UART.
 Known Issues
 Case Conversion: The program currently only performs case conversion on alphabetic characters.
 
-7. **UART-Based Text Menu for Dev Board Control**: A text menu interface for controlling the development board via UART.
+# 7. **UART-Based Text Menu for Dev Board Control**: A text menu interface for controlling the development board via UART.
 
 ## Overview
   This project implements a simple command-line interface for embedded systems using the LPUART (Low Power Universal Asynchronous Receiver Transmitter) module on a microcontroller. The system includes a FIFO (First In, First Out) buffer for UART communication, a menu system for various commands, and utility functions for hardware manipulation.
