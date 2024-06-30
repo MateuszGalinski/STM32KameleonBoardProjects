@@ -195,48 +195,48 @@ Case Conversion: The program currently only performs case conversion on alphabet
 
 ## Functions
 ### FIFO Buffer
-FIFO_Init(): Initializes the FIFO buffer.
-FIFO_Empty(): Empties the FIFO buffer.
-FIFO_IsEmpty(): Checks if the FIFO buffer is empty.
-FIFO_IsFull(): Checks if the FIFO buffer is full.
-FIFO_Put(): Adds data to the FIFO buffer.
-FIFO_Get(): Retrieves data from the FIFO buffer.
+- FIFO_Init(): Initializes the FIFO buffer.
+- FIFO_Empty(): Empties the FIFO buffer.
+- FIFO_IsEmpty(): Checks if the FIFO buffer is empty.
+- FIFO_IsFull(): Checks if the FIFO buffer is full.
+- FIFO_Put(): Adds data to the FIFO buffer.
+- FIFO_Get(): Retrieves data from the FIFO buffer.
 ### LPUART Communication
-LPUART_Init(): Initializes the LPUART peripheral.
-Send_Char(): Sends a single character over LPUART.
-Send_String(): Sends a string over LPUART.
-Recv_Char(): Receives a single character from LPUART.
+- LPUART_Init(): Initializes the LPUART peripheral.
+- Send_Char(): Sends a single character over LPUART.
+- Send_String(): Sends a string over LPUART.
+- Recv_Char(): Receives a single character from LPUART.
 ### Menu Display and Command Handling
-commandHandler(): Processes commands from the user.
-extractWords(): Extracts the first and second words from a command.
-printWelcomeMessage(): Prints the welcome message.
-printMainMenuHelp(): Displays help for the main menu.
-printLEDHelp(): Displays help for LED commands.
-print7LEDHelp(): Displays help for 7-LED display commands.
-printJoyHelp(): Displays help for joystick commands.
-printLPUARTHelp(): Displays help for LPUART commands.
-getHelp(): Provides command help based on the current menu level.
-menuNavigation(): Handles navigation between menus.
-handleLedCommands(): Processes LED-related commands.
-handleJoyCommands(): Processes joystick commands.
-handleLPUARTCommands(): Processes LPUART commands.
-handle7LEDCommands(): Processes 7-LED display commands.
+- commandHandler(): Processes commands from the user.
+- extractWords(): Extracts the first and second words from a command.
+- printWelcomeMessage(): Prints the welcome message.
+- printMainMenuHelp(): Displays help for the main menu.
+- printLEDHelp(): Displays help for LED commands.
+- print7LEDHelp(): Displays help for 7-LED display commands.
+- printJoyHelp(): Displays help for joystick commands.
+- printLPUARTHelp(): Displays help for LPUART commands.
+- getHelp(): Provides command help based on the current menu level.
+- menuNavigation(): Handles navigation between menus.
+- handleLedCommands(): Processes LED-related commands.
+- handleJoyCommands(): Processes joystick commands.
+- handleLPUARTCommands(): Processes LPUART commands.
+- handle7LEDCommands(): Processes 7-LED display commands.
 ### Useful Functions
-My_Clock_Init(): Initializes the system clock.
-My_Delay(): Delays for a specified amount of time.
-Display_Init(): Initializes the 7-LED display.
-JoyStick_Init(): Initializes the joystick.
-Check_Input(): Checks if the joystick button is pressed.
-Diodes_Init(): Initializes the LEDs.
-Set_Moder(): Configures the GPIO mode.
-displayNumber(): Displays a number on the 7-LED display.
-setRGBLed(): Sets the state of the RGB LED.
-resetRGBLed(): Resets the RGB LED.
-toggleRGBLed(): Toggles the RGB LED state.
-statusRGBLed(): Checks the status of the RGB LED.
-setLed(): Sets a specific LED.
-resetLed(): Resets a specific LED.
-toggleLed(): Toggles a specific LED.
-getLedStatus(): Checks the status of a specific LED.
-statusJoy(): Checks the status of the joystick.
-blinkLedInMain(): Manages LED blinking in the main loop.
+- My_Clock_Init(): Initializes the system clock.
+- My_Delay(): Delays for a specified amount of time.
+- Display_Init(): Initializes the 7-LED display.
+- JoyStick_Init(): Initializes the joystick.
+- Check_Input(): Checks if the joystick button is pressed.
+- Diodes_Init(): Initializes the LEDs.
+- Set_Moder(): Configures the GPIO mode.
+- displayNumber(): Displays a number on the 7-LED display.
+- setRGBLed(): Sets the state of the RGB LED.
+- resetRGBLed(): Resets the RGB LED.
+- toggleRGBLed(): Toggles the RGB LED state.
+- statusRGBLed(): Checks the status of the RGB LED.
+- setLed(): Sets a specific LED.
+- resetLed(): Resets a specific LED.
+- toggleLed(): Toggles a specific LED.
+- getLedStatus(): Checks the status of a specific LED.
+- statusJoy(): Checks the status of the joystick.
+- blinkLedInMain(): Manages LED blinking in the main loop.
